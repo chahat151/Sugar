@@ -1,0 +1,10 @@
+{
+  "build": {
+    "env": {
+      "GIT_LFS_SKIP_SMUDGE": "1"
+    },
+    "commands": {
+      "prebuild": "git lfs pull"
+    }
+  }
+}
