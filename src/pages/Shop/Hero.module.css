@@ -4,7 +4,8 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  padding: 0rem 0rem 33rem 0rem;
+  padding: 0rem 0rem 24rem 0rem;
+  margin-bottom: 0rem;
   /* height: 52.2rem; */
 }
 
@@ -37,6 +38,7 @@
   /* letter-spacing: -0.15em; */
   color: #fff;
   font-weight: 700;
+  text-wrap: nowrap
 }
 
 .secondaryHeaderContainer {
@@ -57,10 +59,40 @@
   transition: background-color 0.3s ease;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .shopContainer {
-      padding: 0rem 0rem 23rem 0rem;
-      font-size: 90.5%;
-      /* height: 52.2em; */
-    }
+    padding: 0rem 0rem 22vw 0rem;
+    font-size: 90.5%;
+  }
+
+  .innerSecondaryHeaderContainer {
+    display: none;
+  }
+
+  .shopContent {
+    top: 52%;
+  }
 }
+
+@media (max-width: 768px) {
+  .shopContainer {
+    padding: 0rem 0rem 28vw 0rem;
+    font-size: 76%;
+  }
+
+  .shopContent {
+    top: 60%;
+  }
+
+}
+
+/* @media (max-width: 425px) {
+  .shopContainer {
+    padding: 0rem 0rem 8rem 0rem;
+    font-size: 80.5%;
+  }
+
+  .shopContent {
+    top: 54%;
+  }
+} */

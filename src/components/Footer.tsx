@@ -58,6 +58,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
         <div className={styles.footerLinkList}>
           <div className={styles.innerFooterLinkList}>
             <h3 className={styles.linkTitle}>

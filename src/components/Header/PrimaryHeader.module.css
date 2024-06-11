@@ -124,10 +124,22 @@
   cursor: pointer;
 }
 
-@media (max-width: 1000px) {
+.headerBar {
+  display: flex;
+}
 
-  .primaryHeaderContainerRelative,
-  .primaryHeaderContainerAbsolute {
+.headerSlider {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+
+  .headerBar {
     display: none;
+  }
+
+  .headerSlider {
+    display: flex;
+    padding: 1.8rem 3rem;
   }
 }

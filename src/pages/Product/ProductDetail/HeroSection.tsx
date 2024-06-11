@@ -125,9 +125,7 @@ function ProductDetail() {
       <Helmet>
         <title>{productDetails.title}</title>
       </Helmet>
-      <div style={{ position: "relative" }}>
         <PrimaryHeader position="relative" />
-      </div>
       <div style={{ maxWidth: "126rem", margin: "4rem auto 0px auto" }}>
         <div className={styles.container}>
           <div style={{ flex: 1 }}>

@@ -2,7 +2,8 @@
   display: grid;
   gap: 6rem 3rem;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+  padding: 5rem 3rem;
   font-size: 1rem;
 }
 
@@ -65,17 +66,19 @@
   letter-spacing: 0.4px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     .container {
       grid-template-columns: repeat(2, 1fr);
+      padding: 4rem 2rem;
         /* font-size: 0.7rem; */
         /* Adjust font size for the container in smaller screens */
       }
 }
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .container {
       grid-template-columns: repeat(1, 1fr);
         font-size: 0.9rem;
+        padding: 4rem 1rem;
         /* Adjust font size for the container in smaller screens */
       }
 }

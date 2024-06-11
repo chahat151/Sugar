@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import Dropdown from "../Dropdown/DropMenu";
 import SuggestionSection from "pages/Product/ProductDetail/SuggestionSection";
+import { IoMenu } from "react-icons/io5";
 
 interface ComponentProps {
   position?: "absolute" | "relative";
@@ -22,6 +23,7 @@ const PrimaryHeader: React.FC<ComponentProps> = ({ position = "absolute" }) => {
     const handleScroll = () => {
       const { current } = headerRef;
       if (current) {
+        // console.log(current.getBoundingClientRect().top);
         if (current.getBoundingClientRect().top < 40) {
           setIsTop(false); // Change this to your desired color
         } else {
@@ -38,109 +40,151 @@ const PrimaryHeader: React.FC<ComponentProps> = ({ position = "absolute" }) => {
   }, []);
 
   return (
-    <motion.nav
-      className={
-        position === "absolute"
-          ? styles.primaryHeaderContainerAbsolute
-          : styles.primaryHeaderContainerRelative
-      }
-      ref={headerRef}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
-      style={{
-        backgroundColor: theme("#fff", "transparent"),
-      }}
-    >
-      <div className={styles.companyLogo}>
-        <img
-          src={isHovered ? asset116 : isTop ? asset117 : asset116}
-          alt="compant logo"
-          className={styles.companyLogo}
-          onClick={() => navigate("/home")}
-        />
-      </div>
-      <div>
-        <ul className={styles.navLinks}>
-          <li className={styles.navItem}>
-            <div
-              style={{ color: theme("#000", "#fff") }}
-              className={styles.navLink}
-              onClick={() => navigate("/shop")}
-            >
-              <span>Shop</span>
-            </div>
-            <div className={styles.dropdownList}>
-              <SuggestionSection />
-            </div>
-          </li>
-          <li className={styles.navItem}>
-            <div
-              style={{ color: theme("#000", "#fff") }}
-              className={styles.navLink}
-              onClick={() => navigate("/giftIdeas")}
-            >
-              <span>Gift Ideas</span>
-            </div>
-            <div className={styles.dropdownList}>
-              <SuggestionSection />
-            </div>
-          </li>
-          <li className={styles.navItem}>
-            <div
-              style={{ color: theme("#000", "#fff") }}
-              className={styles.navLink}
-              onClick={() => navigate("/confirmation")}
-            >
-              <span>Confirmation</span>
-            </div>
-            <div className={styles.dropdownList}>
-              <SuggestionSection />
-            </div>
-          </li>
-          <li
-            style={{ color: theme("#000", "#fff") }}
-            className={styles.navLink}
-            onClick={() => navigate("/solutions")}
-          >
-            Company Solutions
-          </li>
-          <li
-            style={{ color: theme("#000", "#fff") }}
-            className={styles.navLink}
-            onClick={() => navigate("/brand")}
-          >
-            Brand
-          </li>
-        </ul>
-      </div>
-      <div
+    <div ref={headerRef}>
+      <motion.nav
+        className={
+          position === "absolute"
+            ? `${styles.headerBar} ${styles.primaryHeaderContainerAbsolute}`
+            : `${styles.headerBar} ${styles.primaryHeaderContainerRelative}`
+        }
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.5 }}
         style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          gap: "2rem",
+          backgroundColor: theme("#fff", "transparent"),
         }}
       >
-        {/* <select name="" id="" className={styles.select}>
-          <option value="ENG">ENG</option>
-        </select> */}
-        <Dropdown
-          label="Lang"
-          options={["Eng", "Hin"]}
-          defaultVal={"Eng"}
-          style={{ color: theme("#000", "#fff") }}
-        />
-        <div className={styles.navIcons}>
-          <Asset47 color={theme("#000", "#fff")} width="24" />
+        <div className={styles.companyLogo}>
+          <img
+            src={isHovered ? asset116 : isTop ? asset117 : asset116}
+            alt="compant logo"
+            className={styles.companyLogo}
+            onClick={() => navigate("/home")}
+          />
         </div>
-        <div className={styles.navIcons}>
-          <Asset48 color={theme("#000", "#fff")} width="24" />
+        <div>
+          <ul className={styles.navLinks}>
+            <li className={styles.navItem}>
+              <div
+                style={{ color: theme("#000", "#fff") }}
+                className={styles.navLink}
+                onClick={() => navigate("/shop")}
+              >
+                <span>Shop</span>
+              </div>
+              <div className={styles.dropdownList}>
+                <SuggestionSection />
+              </div>
+            </li>
+            <li className={styles.navItem}>
+              <div
+                style={{ color: theme("#000", "#fff") }}
+                className={styles.navLink}
+                onClick={() => navigate("/giftIdeas")}
+              >
+                <span>Gift Ideas</span>
+              </div>
+              <div className={styles.dropdownList}>
+                <SuggestionSection />
+              </div>
+            </li>
+            <li className={styles.navItem}>
+              <div
+                style={{ color: theme("#000", "#fff") }}
+                className={styles.navLink}
+                onClick={() => navigate("/confirmation")}
+              >
+                <span>Confirmation</span>
+              </div>
+              <div className={styles.dropdownList}>
+                <SuggestionSection />
+              </div>
+            </li>
+            <li
+              style={{ color: theme("#000", "#fff") }}
+              className={styles.navLink}
+              onClick={() => navigate("/solutions")}
+            >
+              Company Solutions
+            </li>
+            <li
+              style={{ color: theme("#000", "#fff") }}
+              className={styles.navLink}
+              onClick={() => navigate("/brand")}
+            >
+              Brand
+            </li>
+          </ul>
         </div>
-      </div>
-    </motion.nav>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "2rem",
+          }}
+        >
+          {/* <select name="" id="" className={styles.select}>
+            <option value="ENG">ENG</option>
+          </select> */}
+          <Dropdown
+            label="Lang"
+            options={["Eng", "Hin"]}
+            defaultVal={"Eng"}
+            style={{ color: theme("#000", "#fff") }}
+          />
+          <div className={styles.navIcons}>
+            <Asset47 color={theme("#000", "#fff")} width="24" />
+          </div>
+          <div className={styles.navIcons}>
+            <Asset48 color={theme("#000", "#fff")} width="24" />
+          </div>
+        </div>
+      </motion.nav>
+      <motion.nav
+        className={
+          position === "absolute"
+            ? `${styles.headerSlider} ${styles.primaryHeaderContainerAbsolute}`
+            : `${styles.headerSlider} ${styles.primaryHeaderContainerRelative}`
+        }
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.5 }}
+        style={{
+          backgroundColor: theme("#fff", "transparent"),
+          
+        }}
+      >
+        <IoMenu style={{ fontSize: "3rem", color: theme("#000", "#fff") }} />
+        <div className={styles.companyLogo}>
+          <img
+            src={isHovered ? asset116 : isTop ? asset117 : asset116}
+            alt="compant logo"
+            className={styles.companyLogo}
+            onClick={() => navigate("/home")}
+          />
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "2rem",
+          }}
+        >
+          <div className={styles.navIcons}>
+            <Asset47 color={theme("#000", "#fff")} width="24" />
+          </div>
+          <div className={styles.navIcons}>
+            <Asset48 color={theme("#000", "#fff")} width="24" />
+          </div>
+        </div>
+      </motion.nav>
+    </div>
   );
 };
 export default PrimaryHeader;
