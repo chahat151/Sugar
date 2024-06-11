@@ -20,9 +20,9 @@ function Error() {
       >
         <div style={{ height: "100%", width: "100vw" }}>
           <LazyImage
-            src="https://github.com/chahat151/sugar_assets/blob/main/asset157.jpg?raw=true"
+            src="https://github.com/chahat151/sugar_assets/blob/main/images/asset157.jpg?raw=true"
             placeholderSrc={
-              "https://github.com/chahat151/sugar_assets/blob/main/asset157-small.jpg?raw=true"
+              "https://github.com/chahat151/sugar_assets/blob/main/images/asset157-small.jpg?raw=true"
             }
             alt="Image 1"
           />

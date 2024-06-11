@@ -16,126 +16,126 @@ interface Product {
 const productsData: Product[] = [
   {
     image:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset155.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset155.jpeg?raw=true",
     smallImage:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset155-small.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset155-small.jpeg?raw=true",
     title: "Enjoy after last supper",
     description: "Box with 12 pieces of chocolate",
     price: "19,95",
   },
   {
     image:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset123.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset123.jpeg?raw=true",
     smallImage:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset123-small.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset123-small.jpeg?raw=true",
     title: "Persian Perry - Cube",
     description: "Persian licorice and white chocolate",
     price: "10,95",
   },
   {
     image:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset154.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset154.jpeg?raw=true",
     smallImage:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset154-small.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset154-small.jpeg?raw=true",
     title: "Pink Polly - Cube with 12 bites",
     description: "Raspberries, Persian licorice and white chocolate",
     price: "10,95",
   },
   {
     image:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset124.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset124.jpeg?raw=true",
     smallImage:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset124-small.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset124-small.jpeg?raw=true",
     title: "Grainy Billy - Box med 10 stk. bites",
     description: "Mix chocolate mini bars",
     price: "71,95",
   },
   {
     image:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset153.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset153.jpeg?raw=true",
     smallImage:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset153-small.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset153-small.jpeg?raw=true",
     title: "The Ultimate Box - Exclusive gift box with 4 bites",
     description: "Coconut, cranberry and milk chocolate",
     price: "10,95",
   },
   {
     image:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset125.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset125.jpeg?raw=true",
     smallImage:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset125-small.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset125-small.jpeg?raw=true",
     title: "Dark Beauties - Gift box with 4 Cubes",
     description: "Cookie dough, chocolate chunks and milk chocolate",
     price: "21,95",
   },
   {
     image:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset152.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset152.jpeg?raw=true",
     smallImage:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset152-small.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset152-small.jpeg?raw=true",
     title: "The Instead of Flowers Kit",
     description: "The Heart box + gift box with 2 cubes",
     price: "",
   },
   {
     image:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset126.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset126.jpeg?raw=true",
     smallImage:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset126-small.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset126-small.jpeg?raw=true",
     title: "Lovebar",
     description: "Marzipan and a double layer of premium dark chocolate",
     price: "",
   },
   {
     image:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset150.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset150.jpeg?raw=true",
     smallImage:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset150-small.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset150-small.jpeg?raw=true",
     title: "Protein Mix 30-Pack",
     description: "Flavor pack with 3 different protein bites",
     price: "",
   },
   {
     image:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset127.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset127.jpeg?raw=true",
     smallImage:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset127-small.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset127-small.jpeg?raw=true",
     title: "FCK chocolate bar",
     description: "Crunchy caramel, sea salt and premium milk chocolate",
     price: "",
   },
   {
     image:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset151.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset151.jpeg?raw=true",
     smallImage:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset151-small.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset151-small.jpeg?raw=true",
     title: "Creamy Carol",
     description: "Soft caramel and premium dark chocolate",
     price: "",
   },
   {
     image:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset128.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset128.jpeg?raw=true",
     smallImage:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset128-small.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset128-small.jpeg?raw=true",
     title: "Salty Fred",
     description: "Salted almonds and premium dark chocolate",
     price: "",
   },
   {
     image:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset149.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset149.jpeg?raw=true",
     smallImage:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset149-small.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset149-small.jpeg?raw=true",
     title: "SUGAR Cookie Joe - Cube with 9 bites",
     description: "Cookie dough, chocolate chunks and milk chocolate",
     price: "",
   },
   {
     image:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset129.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset129.jpeg?raw=true",
     smallImage:
-      "https://github.com/chahat151/sugar_assets/blob/main/asset129-small.jpeg?raw=true",
+      "https://github.com/chahat151/sugar_assets/blob/main/images/asset129-small.jpeg?raw=true",
     title: "Crispy Carrie",
     description: "Crunchy caramel, sea salt and premium milk chocolat",
     price: "",
