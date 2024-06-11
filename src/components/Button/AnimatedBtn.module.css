@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700,800,900");
+
+.buttonContainer1,
+.buttonContainer2,
+.buttonContainer3 {
+  position: relative;
+  /* width: 27rem; */
+  display: inline-block;
+  height: 5rem;
+  /* margin-left: auto;
+  margin-right: auto;
+  margin-top: 7vh; */
+  overflow: hidden;
+  border: 0.1rem solid white;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  transition: 0.5s;
+  /* letter-spacing: 0.1rem; */
+  border-radius: 0.4rem;
+}
+
+.buttonContainer1 button,
+.buttonContainer2 button,
+.buttonContainer3 button {
+  width: 101%;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 1.28rem;
+  /* letter-spacing: 0.1rem; */
+  background: white;
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding: 0 2.5rem;
+}
+
+.buttonContainer1 button {
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  -webkit-animation: ani2 0.5s steps(22) forwards;
+  animation: ani2 0.5s steps(22) forwards;
+}
+
+.buttonContainer1 button:hover {
+  -webkit-animation: ani 0.5s steps(22) forwards;
+  animation: ani 0.5s steps(22) forwards;
+}
+
+.buttonContainer2 button {
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+  -webkit-mask-size: 3000% 100%;
+  mask-size: 3000% 100%;
+  -webkit-animation: ani2 0.7s steps(29) forwards;
+  animation: ani2 0.7s steps(29) forwards;
+}
+
+.buttonContainer2 button:hover {
+  -webkit-animation: ani 0.7s steps(29) forwards;
+  animation: ani 0.7s steps(29) forwards;
+}
+
+.buttonContainer3 button {
+  -webkit-mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+  mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+  -webkit-mask-size: 7100% 100%;
+  mask-size: 7100% 100%;
+  -webkit-animation: ani2 0.7s steps(70) forwards;
+  animation: ani2 0.7s steps(70) forwards;
+}
+
+.buttonContainer3 button:hover {
+  -webkit-animation: ani 0.7s steps(70) forwards;
+  animation: ani 0.7s steps(70) forwards;
+}
+
+.mas {
+  position: absolute;
+  color: white;
+  text-align: center;
+  width: 101%;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  position: absolute;
+  font-size: 1.28rem;
+  margin-top: 1.6rem;
+  overflow: hidden;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}

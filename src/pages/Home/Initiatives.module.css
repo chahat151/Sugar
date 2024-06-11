@@ -1,0 +1,82 @@
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 60rem;
+  background-color: #efefef;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contentContainer {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.InnerContentContainer {
+  margin-bottom: 1.6rem;
+}
+
+.subtitle {
+  /* letter-spacing: 0.2rem;
+  display: inline-block; */
+  font-size: 2.16rem;
+  transform: scaleY(0.7);
+  transform-origin: 0rem 0rem;
+  font-weight: 400;
+  -ms-transform-origin: bottom;
+}
+
+.titleWrapper {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.54rem;
+  transform: scaleY(1.5);
+  font-weight: 900;
+  letter-spacing: 0.11rem;
+}
+
+.content {
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.03rem;
+}
+
+.tabList {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 6.5rem;
+}
+
+.tab {
+  margin-right: 2rem;
+  padding: 1rem 0.8rem;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: -0.05rem;
+}
+
+.tab .text {
+  transform: scaleY(1.5);
+}
+
+.underlineWrapper {
+  margin-top: 0.5rem;
+}
+
+.underline {
+  height: 0.2rem;
+  background: black;
+}

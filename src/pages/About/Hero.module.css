@@ -1,0 +1,97 @@
+.heroContainer {
+  /* background-image: url('../../assets/images/asset87.jpeg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 0rem 0rem 52.5rem 0rem;
+  /* height: 52.2rem; */
+}
+
+.heroBG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.heroBGImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(90%) contrast(110%);
+}
+
+.heroContent {
+  position: absolute;
+  bottom: 13.2rem;
+  left: 8.4rem;
+}
+
+.h1 {
+  font-size: 5rem;
+  letter-spacing: -0.15rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.contentWrapper {
+  margin-top: 0.6rem;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.12rem;
+}
+
+
+.blurredImg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.blurredImg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  animation: pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+.loaded .img {
+  opacity: 1;
+}
+
+.loaded::before {
+  animation: none;
+  content: none;
+}

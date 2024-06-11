@@ -1,0 +1,41 @@
+.accordionItem {
+  border-bottom: 0.5px solid #ddd;
+}
+
+.accordionItem:first-child {
+  border-top: 0.5px solid #ddd;
+}
+
+.accordionTitle {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  /* background-color: #f9f9f9; */
+}
+
+.accordionContent {
+  overflow: hidden;
+}
+
+.accordionTileContainer {
+  display: flex;
+  align-content: center
+}
+
+.accordionTileSVG {
+  position: relative;
+  top: -0.3rem;
+  margin-right: 1.3rem
+}
+
+.accordionTileTitle {
+  font-size: 1.6rem;
+  font-weight: 900
+}
+
+.accordionTileContent {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}

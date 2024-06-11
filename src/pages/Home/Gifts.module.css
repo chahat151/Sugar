@@ -1,0 +1,32 @@
+.h2 {
+  font-size: 2.64rem;
+  margin-bottom: 2rem;
+  transform: scaleY(1.3);
+}
+
+.title {
+  margin-bottom: 3rem;
+}
+
+.giftContainer {
+  display: flex;
+  gap: 3.5rem;
+}
+
+.card {
+  flex: 1;
+  cursor: pointer;
+  position: relative;
+}
+
+.card .image {
+  width: 100%;
+  height: auto;
+}
+
+.btnContainer {
+  position: absolute;
+  bottom: 5.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}

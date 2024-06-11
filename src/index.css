@@ -1,0 +1,84 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font Sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font Weigths
+Thin: 100
+Light: 300
+Default: 400
+Medium: 400
+bold:  700
+bolder: 900
+
+-Line heigths
+Default: 1
+small: 1.4, 1.5
+Medium: 1.9
+
+-Letter Spacing
+-1.5px
+0.75px
+
+--- 02 COLORS
+
+- Primary: #f7931a,
+-Tints:
+-Shades:
+-Accents:
+Grays: #605f5f
+
+-System Spacing (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 90 / 128
+
+*/
+
+/* @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"); */
+@font-face {
+  font-family: "Chocolate";
+  src: url("assets/fonts/ChocolateRegular.woff2") format("woff2");
+  font-weight: 400;
+  /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Chocolate";
+  src: url("assets/fonts/ChocolateCOMPBold.woff2") format("woff2");
+  font-weight: 700;
+  /* Bold and compact */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Chocolate";
+  src: url("assets/fonts/ChocolateBold.woff2") format("woff2");
+  font-weight: 900;
+  /* Bold */
+  font-style: normal;
+}
+
+/* ********************* */
+/* GENERAL STYLES */
+/* ********************* */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Chocolate", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}

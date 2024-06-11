@@ -1,0 +1,24 @@
+.innerAbout {
+  max-width: 98rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subtitle {
+  transform: scaleY(0.85);
+  transform-origin: 0rem 0rem;
+  margin-bottom: 1.6rem;
+}
+
+.h2 {
+  font-size: 2.64rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  transform: scaleY(1.3);
+}
+
+.para {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}

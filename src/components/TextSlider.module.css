@@ -1,0 +1,40 @@
+/* TextSlider.module.css */
+.text-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.text {
+  /* position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%; */
+  margin-bottom: 0;
+  animation: slide-in 1s ease-in-out forwards, pause 2s forwards,
+    slide-out 1s ease-in-out 3s forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes pause {
+  0%,
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: -100%;
+  }
+}
