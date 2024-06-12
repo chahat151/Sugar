@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import styles from "./Occasions.module.css";
-import { asset54, asset55 } from "../../assets/svgs";
+import { asset54, asset55 } from "assets/svgs";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import AnimatedBtn from "components/Button/AnimatedBtn";
@@ -23,11 +23,35 @@ function Occasions() {
   return (
     <section className="occasionContainer">
       <div className={styles.innerOccasionContainer}>
-        <h2 className={styles.h2}>Chocolate for any occasion</h2>
+        <h2 className={styles.h2}>
+          Small chocolate bites for the season's festivities
+        </h2>
         <div className={styles.swiperContainer}>
           <Swiper
-            slidesPerView={3}
-            spaceBetween={30}
+            // slidesPerView={1}
+            // spaceBetween={10}
+            breakpoints={{
+              0: {
+                slidesPerView: 1.2,
+                spaceBetween: 10,
+              },
+              480: {
+                slidesPerView: 1.2,
+                spaceBetween: 10,
+              },
+              568: {
+                slidesPerView: 2.2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2.2,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+            }}
             speed={2000}
             freeMode={true}
             loop={true}

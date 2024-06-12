@@ -1,8 +1,7 @@
 import { lazy, Suspense } from "react";
-
+import styles from './Index.module.css'
 import Hero from "./Hero";
 import Occasions from "./Occasions";
-
 import { About1, About2 } from "./About";
 import Gifts from "./Gifts";
 import Inspiration from "./Inspirations";
@@ -17,7 +16,7 @@ const TutorialSection = lazy(
 
 function Home() {
   return (
-    <main>
+    <main className={styles.container}>
       <Hero />
       <Occasions />
       <About1 />

@@ -29,13 +29,13 @@
   position: absolute;
   bottom: 13.2rem;
   left: 8.4rem;
+  font-size: 1.4rem;
 }
 
 .h1 {
-  font-size: 5rem;
-  letter-spacing: -0.15rem;
+  font-size: 6rem;
   color: #fff;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .contentWrapper {

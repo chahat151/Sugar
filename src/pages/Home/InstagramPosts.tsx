@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./InstagramPosts.module.css";
 
 import {
@@ -103,6 +103,30 @@ function InstagramPosts() {
   });
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
+  const [postsToShow, setPostsToShow] = useState(10); 
+
+  // Adjust number of posts based on viewport size
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 568) {
+        setPostsToShow(4);
+      } else if (window.innerWidth > 568 && window.innerWidth <= 856) {
+        setPostsToShow(6);
+      } else if (window.innerWidth > 856 && window.innerWidth <= 1024) {
+        setPostsToShow(8);
+      } else {
+        setPostsToShow(10);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    // Clean-up
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <section
       style={{
@@ -111,7 +135,7 @@ function InstagramPosts() {
       }}
     >
       <div className={styles.instaContainer}>
-        {posts.map((post, index) => {
+        {posts.slice(0, postsToShow).map((post, index) => {
           const { image }: Post = post;
           return (
             <div

@@ -1,0 +1,25 @@
+:local(:root) {
+  --base-font-size: 62.5%;
+  /* 1rem = 10px */
+}
+
+@media (max-width: 1024px) {
+  :local(:root) {
+    --base-font-size: 56.25%;
+    /* 1rem = 9px */
+  }
+}
+
+@media (max-width: 768px) {
+  :local(:root) {
+    --base-font-size: 56.25%;
+    /* 1rem = 9px */
+  }
+}
+
+@media (max-width: 480px) {
+  :local(:root) {
+    --base-font-size: 50%;
+    /* 1rem = 8px */
+  }
+}

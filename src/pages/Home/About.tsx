@@ -1,4 +1,5 @@
 import styles from "./About.module.css";
+import { UnderlineBtn } from "../../components/Button/UnderlineBtn";
 
 const about = [
   `At Sugar, we create responsible and fair gourmet chocolate of exclusive quality using only the finest natural ingredients. Nothing else. We offer a luxurious selection of gift boxes and chocolate assortments for any special occasion, whether it's holidays like Christmas and Easter or just a sweet treat on the dullest of Mondays.`,
@@ -28,7 +29,9 @@ export const About1 = () => {
           great lengths for new innovative opportunities, but we never
           compromise on good taste. This is our love for natural chocolate.
         </p>
-        <p>Read more here</p>
+        <UnderlineBtn onClick={() => console.log("clicked")} inverted={true}>
+          Read more here
+        </UnderlineBtn>
       </div>
     </section>
   );

@@ -3,6 +3,16 @@
   padding: 0rem 3.5vw;
   /* overflow-x: hidden; */
 }
+
+
+@media (max-width:1024px) {
+    :global section {
+        margin-bottom: 8rem;
+        /* padding: 0rem 3.5vw; */
+        /* overflow-x: hidden; */
+      }
+}
+
 /* 
 :global h1,
 :global h2,

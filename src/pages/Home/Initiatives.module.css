@@ -80,3 +80,9 @@
   height: 0.2rem;
   background: black;
 }
+
+@media (max-width: 768px) {
+  .container{
+    display: none;
+  }
+}

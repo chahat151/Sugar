@@ -60,6 +60,15 @@ Grays: #605f5f
 }
 
 /* ********************* */
+/* Variables */
+/* ********************* */
+
+:root {
+  --base-font-size: 62.5%;
+  /* This sets 1rem to 10px for easier calculations */
+}
+
+/* ********************* */
 /* GENERAL STYLES */
 /* ********************* */
 
@@ -73,12 +82,28 @@ Grays: #605f5f
   outline: none !important;
 }
 
+
+
 html {
-  font-size: 62.5%;
+  font-size: var(--base-font-size);
 }
 
 body {
   font-family: "Chocolate", sans-serif;
   font-weight: 400;
   line-height: 1;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --base-font-size: 56.25%;
+    /* Smaller font size for tablets (1rem = 9px) */
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --base-font-size: 50%;
+    /* Smaller font size for mobile (1rem = 8px) */
+  }
 }

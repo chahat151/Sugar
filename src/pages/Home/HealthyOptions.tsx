@@ -1,6 +1,7 @@
 import styles from "./HealthyOptions.module.css";
 
 import { asset33, asset34 } from "../../assets/images";
+import { UnderlineBtn } from "components/Button/UnderlineBtn";
 
 function HealthyOptions() {
   return (
@@ -44,7 +45,13 @@ function HealthyOptions() {
                 >
                   {option.title}
                 </h2>
-                <p>See the selection</p>
+                <UnderlineBtn
+                  inverted
+                  style={{ color: "#fff" }}
+                  underlineColor="#fff"
+                >
+                  See the selection
+                </UnderlineBtn>
               </div>
             </div>
           );

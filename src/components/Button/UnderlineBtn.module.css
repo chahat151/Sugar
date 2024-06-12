@@ -1,0 +1,35 @@
+.invertedNavLink, .navLink {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.4rem;
+  padding-bottom: 0.3rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+}
+
+.invertedNavLink::after, .navLink::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /* width: 0; */
+  height: 1px;
+  background-color: var(--underline-color, #222);
+  transition: all 0.3s ease;
+}
+.navLink::after{
+  width: 0;
+}
+.invertedNavLink::after{
+  width: 100%;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.invertedNavLink:hover::after {
+  width: 0%;
+}
