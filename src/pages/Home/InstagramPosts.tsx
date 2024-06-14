@@ -15,6 +15,8 @@ import {
 } from "../../assets/images";
 import { Asset57, asset40 } from "../../assets/svgs";
 import index from "../GiftIdeas/index";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { preloadImages } from "utils/functions";
 
 interface Post {
   id: string;
@@ -174,6 +176,18 @@ function InstagramPosts() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isModalOpen]);
 
+  useEffect(() => {
+    const imageUrls = posts.map((post) => post.image);
+    preloadImages(imageUrls);
+  }, []);
+
+  const handleNav = (id: string, val: number) => {
+    const currentIndex =
+      (posts.findIndex((post) => post.id === id) + val) % posts.length;
+    const newIndex = (currentIndex + val + posts.length) % posts.length;
+    setSocialLinkModal({ ...posts[newIndex] });
+  };
+
   return (
     <section
       style={{
@@ -206,6 +220,20 @@ function InstagramPosts() {
       </div>
       <div className={[styles.modal, isModalOpen ? styles.show : ""].join(" ")}>
         <div className={styles.modalContainer} ref={modalRef}>
+          <div className={styles.navContainer}>
+            <div
+              style={{ padding: "2rem", cursor: "pointer" }}
+              onClick={() => handleNav(socialLinkModal.id, -1)}
+            >
+              <IoIosArrowBack style={{ color: "#fff", fontSize: "4rem" }} />
+            </div>
+            <div
+              style={{ padding: "2rem", cursor: "pointer" }}
+              onClick={() => handleNav(socialLinkModal.id, 1)}
+            >
+              <IoIosArrowForward style={{ color: "#fff", fontSize: "4rem" }} />
+            </div>
+          </div>
           <div className={styles.modalImageDiv}>
             <img
               src={socialLinkModal.image}

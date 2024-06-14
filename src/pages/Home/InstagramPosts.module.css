@@ -79,12 +79,11 @@
 
 .modalImageDiv {
   grid-area: item1;
-  aspect-ratio: 1;
 }
 
 .instaUsername {
   grid-area: item2;
-  height: 70px;
+  height: 7rem;
 }
 
 .modalContentDiv {
@@ -104,15 +103,18 @@
 }
 
 .modalContent {
+
   display: flex;
   flex-direction: column;
   height: 100%;
+  align-items: center;
 }
 
 .instaUsername {
   display: flex;
   padding: 1.2rem 1.2rem 1.6rem 1.2rem;
   gap: 1rem;
+  align-items: center;
 }
 
 .instaUsername .icon {
@@ -160,6 +162,17 @@
   border-top: 0.1rem solid #dedede;
 }
 
+.navContainer {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0 2rem; */
+}
+
 
 
 
@@ -197,12 +210,16 @@
     display: none;
   }
 
+  .modalImageDiv {
+    aspect-ratio: 1;
+  }
+
   .instaUsername {
     padding: 1.2rem 2.2rem;
   }
 
   .content {
-    padding: 3rem;
+    padding: 8rem 3rem 3rem 3rem;
   }
 }
 
@@ -211,20 +228,11 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+
+  .instaUsername {
+    padding: 1.2rem 1.8rem;
+    /* height: 6rem; */
+  }
 }
 
-@media (max-width:425px) {}
-
-/* @media (max-width:768px) {
-  .container {
-    padding: 0 3vw;
-    aspect-ratio: 1/0.71;
-  }
-} */
-
-/* @media (max-width:550px) {
-  .container {
-    padding: 0 3.5vw;
-    aspect-ratio: 1/0.9;
-  }
-} */
+/* @media (max-width:425px) {} */

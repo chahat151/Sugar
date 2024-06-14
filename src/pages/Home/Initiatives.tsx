@@ -3,6 +3,7 @@ import { AnimatePresence, Variants, motion } from "framer-motion";
 import styles from "./Initiatives.module.css";
 
 import { asset35, asset37, asset36 } from "../../assets/images";
+import { preloadImages } from "utils/functions";
 
 interface Initiative {
   tab: string;
@@ -68,12 +69,7 @@ const tabContentVariantsX: Variants = {
   },
 };
 
-function preloadImages(urls: string[]) {
-  urls.forEach((url) => {
-    const img = new Image();
-    img.src = url;
-  });
-}
+
 
 function Initiatives() {
   const [tabIndex, setTabIndex] = useState<number>(0);
