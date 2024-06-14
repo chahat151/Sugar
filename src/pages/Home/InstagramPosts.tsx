@@ -225,13 +225,13 @@ function InstagramPosts() {
               style={{ padding: "2rem", cursor: "pointer" }}
               onClick={() => handleNav(socialLinkModal.id, -1)}
             >
-              <IoIosArrowBack style={{ color: "#fff", fontSize: "4rem" }} />
+              <IoIosArrowBack style={{ }} />
             </div>
             <div
               style={{ padding: "2rem", cursor: "pointer" }}
               onClick={() => handleNav(socialLinkModal.id, 1)}
             >
-              <IoIosArrowForward style={{ color: "#fff", fontSize: "4rem" }} />
+              <IoIosArrowForward style={{  }} />
             </div>
           </div>
           <div className={styles.modalImageDiv}>

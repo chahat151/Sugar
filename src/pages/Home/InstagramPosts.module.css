@@ -38,8 +38,8 @@
   position: fixed;
   top: 0rem;
   left: 0rem;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.88);
   z-index: 1;
 
@@ -88,6 +88,10 @@
 
 .modalContentDiv {
   grid-area: item3;
+}
+
+.navContainer {
+  grid-area: item4;
 }
 
 /* .modalImageDiv,
@@ -170,7 +174,8 @@
   transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
-  /* padding: 0 2rem; */
+  color: #fff;
+  font-size: 4rem;
 }
 
 
@@ -198,12 +203,14 @@
     grid-template-columns: 1fr;
     grid-template-areas: "item2 item2"
       "item1 item1"
+      "item4 item4"
       "item3 item3";
     grid-template-rows: min-content min-content 1fr;
     overflow-y: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
     height: auto;
+    max-height: 90vh;
   }
 
   .modalContainer::-webkit-scrollbar {
@@ -219,7 +226,13 @@
   }
 
   .content {
-    padding: 8rem 3rem 3rem 3rem;
+    padding: 2rem 3rem 3rem 3rem;
+  }
+
+  .navContainer {
+    position: relative;
+    color: #222;
+    font-size: 3rem;
   }
 }
 
