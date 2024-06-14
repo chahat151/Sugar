@@ -16,7 +16,7 @@ const infoData = [
   },
   {
     title: "Because we care",
-    desc: "At Simply®, we are proud to be part of the NGO: The Cocoa Horizons Foundation. An organization working passionately and purposefully to improve the lives of local communities in the cocoa industry. As a chocolate manufacturer, we consider it an important duty to be aware of our responsibilities and not least to act accordingly. But for us it is much more than a duty. We feel 100% convinced that the taste of good conscience is the best of all flavors. We find it natural to produce chocolate with responsibility for both people and nature. We actually think you can taste it.",
+    desc: "At Sugar, we are proud to be part of the NGO: The Cocoa Horizons Foundation. An organization working passionately and purposefully to improve the lives of local communities in the cocoa industry. As a chocolate manufacturer, we consider it an important duty to be aware of our responsibilities and not least to act accordingly. But for us it is much more than a duty. We feel 100% convinced that the taste of good conscience is the best of all flavors. We find it natural to produce chocolate with responsibility for both people and nature. We actually think you can taste it.",
     image: asset170,
   },
 ];

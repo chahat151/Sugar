@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence, Variants, motion } from "framer-motion";
 import styles from "./Initiatives.module.css";
 
@@ -11,6 +11,7 @@ interface Initiative {
   content: string;
   image: string;
 }
+
 const initiatives: Initiative[] = [
   {
     tab: "Greenhouse",
@@ -67,8 +68,20 @@ const tabContentVariantsX: Variants = {
   },
 };
 
+function preloadImages(urls: string[]) {
+  urls.forEach((url) => {
+    const img = new Image();
+    img.src = url;
+  });
+}
+
 function Initiatives() {
   const [tabIndex, setTabIndex] = useState<number>(0);
+
+  useEffect(() => {
+    const imageUrls = initiatives.map((initiative) => initiative.image);
+    preloadImages(imageUrls);
+  }, []);
 
   const tabVariants = {
     active: { scale: 1.5 },
@@ -82,43 +95,49 @@ function Initiatives() {
   return (
     <section>
       <div
-        style={{
-          padding: "0rem 6vw",
-        }}
+        style={
+          {
+            padding: "0rem 6vw",
+            "--background-image": `url(${initiatives[tabIndex].image})`,
+          } as React.CSSProperties
+        }
       >
         <div className={styles.container}>
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={initiatives[tabIndex].title || "empty"}
-              variants={tabContentVariantsX}
-              initial="initial"
-              animate="enter"
-              exit="exit"
-              transition={{
-                duration: 0.3,
-              }}
-            >
-              <div style={{ height: "60rem" }}>
-                <img
-                  src={initiatives[tabIndex].image}
-                  alt={initiatives[tabIndex].tab}
-                  className={styles.image}
-                />
-              </div>
-            </motion.div>
-          </AnimatePresence>
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={initiatives[tabIndex].title || "empty"}
-              variants={tabContentVariantsY}
-              initial="initial"
-              animate="enter"
-              exit="exit"
-              transition={{
-                duration: 0.3,
-              }}
-            >
-              <div className={styles.contentContainer}>
+          <div className={styles.imgContainer}>
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={initiatives[tabIndex].title || "empty"}
+                variants={tabContentVariantsX}
+                initial="initial"
+                animate="enter"
+                exit="exit"
+                transition={{
+                  duration: 0.3,
+                }}
+              >
+                <div style={{ height: "60rem" }}>
+                  <img
+                    src={initiatives[tabIndex].image}
+                    alt={initiatives[tabIndex].tab}
+                    className={styles.image}
+                  />
+                </div>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+          <div className={styles.contentContainer}>
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={initiatives[tabIndex].title || "empty"}
+                variants={tabContentVariantsY}
+                initial="initial"
+                animate="enter"
+                exit="exit"
+                transition={{
+                  duration: 0.3,
+                }}
+                className="abccc"
+              >
                 <div className={styles.InnerContentContainer}>
                   <p className={styles.subtitle}>
                     {initiatives[tabIndex].subTitle}
@@ -132,9 +151,9 @@ function Initiatives() {
                     {initiatives[tabIndex].content}
                   </p>
                 </div>
-              </div>
-            </motion.div>
-          </AnimatePresence>
+              </motion.div>
+            </AnimatePresence>
+          </div>
         </div>
         <motion.ul className={styles.tabList}>
           {initiatives.map((initiative, i) => (
