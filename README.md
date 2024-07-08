@@ -1,5 +1,5 @@
 
-# Premium Chocolate Shop
+# SUGAR (Premium Chocolate Shop)
 
 Welcome to the Premium Chocolate Shop! This is a React-based web application designed to provide a delightful experience for customers looking to buy high-quality chocolates online.
 
@@ -16,7 +16,7 @@ Welcome to the Premium Chocolate Shop! This is a React-based web application des
 
 ## Demo
 
-Check out the live demo of our Premium Chocolate Shop: [Live Demo](https://example.com)
+Check out the live demo of our Premium Chocolate Shop: [Live Demo](https://sugar-amber.vercel.app)
 
 ## Features
 
@@ -107,8 +107,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 If you have any questions or suggestions, feel free to reach out:
 
-- **Email**: your-email@example.com
-- **GitHub**: [your-username](https://github.com/your-username)
+- **Email**: chahat.cse21@gmail.com
+- **GitHub**: [chahat151](https://github.com/chahat151/)
 
 ---
 
