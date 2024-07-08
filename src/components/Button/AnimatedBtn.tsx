@@ -56,5 +56,8 @@ const AnimatedBtn: React.FC<ComponentProps> = ({
       </div>
     );
   }
+  
+  // Default return value
+  return null;
 };
 export default AnimatedBtn;

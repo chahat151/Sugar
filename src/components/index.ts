@@ -1,7 +1,6 @@
 export * from "./Accordian";
 export * from "./Button/AnimatedBtn";
 export * from "./Dropdown/DropMenu";
-export * from "./Dropdown/Menu";
 export * from "./Footer";
 export * from "./Header/Header";
 export * from "./LazyImage";

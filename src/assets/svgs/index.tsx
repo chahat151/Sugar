@@ -41,3 +41,4 @@ export { default as Asset47 } from "./Asset47.jsx";
 export { default as Asset48 } from "./Asset48.jsx";
 export { default as Asset56 } from "./Asset56.jsx";
 export { default as Asset57 } from "./Asset57.jsx";
+export { default as recycle } from "./recycle.svg";

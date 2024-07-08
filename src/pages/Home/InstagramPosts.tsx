@@ -14,7 +14,7 @@ import {
   asset77,
 } from "../../assets/images";
 import { Asset57, asset40 } from "../../assets/svgs";
-import index from "../GiftIdeas/index";
+
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { preloadImages } from "utils/functions";
 

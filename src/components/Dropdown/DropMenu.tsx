@@ -43,6 +43,7 @@ interface DropdownProps {
   options: string[]; // Array of options
   defaultVal: string; // Array of options
   style?: React.CSSProperties;
+  optionStyle?: React.CSSProperties;
 }
 
 const Dropdown: React.FC<DropdownProps> = ({
@@ -50,6 +51,7 @@ const Dropdown: React.FC<DropdownProps> = ({
   options,
   defaultVal,
   style = {},
+  optionStyle={},
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState<string | null>(
@@ -109,7 +111,7 @@ const Dropdown: React.FC<DropdownProps> = ({
             transition={dropdownItemTransition}
             onClick={() => handleOptionSelect(option)}
             whileHover="hover" // Apply hover animation
-            style={{ backgroundColor: "#fff" }} // Initial background color
+            style={optionStyle} // Initial background color
             whileTap={{ scale: 0.95 }} // Scale down slightly on tap
           >
             {option}

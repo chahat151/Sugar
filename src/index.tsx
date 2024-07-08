@@ -13,21 +13,23 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { SpeedInsights } from "@vercel/speed-insights/react";
-import { Analytics } from "@vercel/analytics/react";
+// import { SpeedInsights } from "@vercel/speed-insights/react";
+// import { Analytics } from "@vercel/analytics/react";
+import CookiePermission from "./CookiePermission";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <SpeedInsights />
-    <Analytics />
+    {/* <SpeedInsights />
+    <Analytics /> */}
     <HelmetProvider>
       <Provider store={store}>
         <Helmet>
           <title>The Sugar Chocolate Factory</title>
         </Helmet>
+        <CookiePermission />
         <App />
       </Provider>
     </HelmetProvider>

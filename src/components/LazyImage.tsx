@@ -43,7 +43,14 @@ const LazyImage: React.FC<LazyImageProps> = ({ src, placeholderSrc, alt }) => {
   }, []);
 
   return (
-    <div style={{ position: "relative", width: "100%", height: "100%", overflow:'hidden' }}>
+    <div
+      style={{
+        position: "relative",
+        width: "100%",
+        height: "100%",
+        overflow: "hidden",
+      }}
+    >
       <img
         ref={imgRef}
         src={placeholderSrc}
@@ -58,6 +65,8 @@ const LazyImage: React.FC<LazyImageProps> = ({ src, placeholderSrc, alt }) => {
           transition: "opacity 0.5s ease-in-out",
           opacity: isLoaded ? 0 : 1,
           transform: "scale(1.1)",
+          objectFit: "cover",
+          objectPosition: "center",
         }}
       />
       {isVisible && (
@@ -71,6 +80,8 @@ const LazyImage: React.FC<LazyImageProps> = ({ src, placeholderSrc, alt }) => {
             opacity: isLoaded ? 1 : 0,
             transition: "opacity 0.5s ease-in-out",
             transform: "scale(1)",
+            objectFit: "cover",
+            objectPosition: "center",
           }}
         />
       )}
