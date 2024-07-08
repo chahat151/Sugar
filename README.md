@@ -44,8 +44,8 @@ To set up the project locally, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/premium-chocolate-shop.git
-   cd premium-chocolate-shop
+   git clone https://github.com/chahat151/Sugar.git
+   cd Sugar
    ```
 
 2. **Install dependencies:**
